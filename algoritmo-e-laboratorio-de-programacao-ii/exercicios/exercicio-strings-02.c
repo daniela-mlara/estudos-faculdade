@@ -10,7 +10,7 @@ int main() {
 
     for (int i = 0; frase[i] != '\0'; i++) {
         if (frase[i] >= 'a' && frase[i] <= 'z') {
-            frase[i] = frase[i] - ('a' - 'A');
+            frase[i] = frase[i] - 32; // Converte para maiúscula subtraindo 32 do valor ASCII
         }
     }
 
